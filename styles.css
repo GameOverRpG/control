@@ -1,0 +1,294 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Cor de fundo preta */
+    color: #ffffff; /* Cor do texto em branco */
+    line-height: 1.6;
+    text-align: center;
+    padding: 0;
+}
+
+header {
+    background: #212121; /* Cor do cabeçalho em cinza escuro */
+    color: #ffffff; /* Cor do texto em branco */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo {
+    width: 80px; /* Logo menor para visualização em celular */
+    height: auto;
+}
+
+nav {
+    background: #000000; /* Roxo mais escuro */
+    padding: 10px;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav .menu li {
+    margin: 5px;
+}
+
+nav .menu a {
+    color: #ffffff; /* Cor do texto em branco */
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: 1px solid #ffffff; /* Borda branca */
+    border-radius: 5px;
+}
+
+nav .menu a:hover {
+    background: #ffffff;
+    color: #000000; /* Roxo mais escuro */
+}
+
+main {
+    padding: 10px;
+}
+
+.section {
+    background: #212121; /* Cor de fundo dos tópicos em cinza escuro */
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 1.5em;
+    color: #304fff; /* Azul mais claro para os títulos */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Borda nas letras */
+}
+
+.section p,
+.section ul li {
+    color: #ffffff; /* Cor do texto em branco abaixo dos subtítulos */
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.highlighted-text {
+    font-size: 1.1em;
+    color: #010002; /* Roxo mais claro */
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Menos espaçamento entre imagem e texto */
+    margin-bottom: 10px;
+}
+
+.section-image {
+    width: 45%; /* Ajustado para duas imagens lado a lado */
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-content {
+    width: 50%;
+    padding: 10px;
+    text-align: left;
+}
+
+footer {
+    background: #34495E; /* Cor de fundo do rodapé (cinza escuro mais claro) */
+    color: #ffffff; /* Cor do texto em branco */
+    padding: 10px 0;
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+    }
+
+    .section-image {
+        width: 70%; /* Imagem maior em telas médias */
+    }
+
+    .text-content {
+        width: 100%;
+    }
+
+    .section h2 {
+        font-size: 1.4em;
+    }
+
+    .highlighted-text {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header .logo {
+        width: 60px; /* Logo menor */
+    }
+
+    nav .menu a {
+        font-size: 0.9em;
+        padding: 4px 8px;
+    }
+
+    .section h2 {
+        font-size: 1.3em; /* Tamanho de título reduzido */
+    }
+
+    .highlighted-text {
+        font-size: 0.9em;
+    }
+
+    .section-image {
+        width: 100%; /* Imagem ocupa toda a largura da tela */
+    }
+
+    .section-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+}
+.subscribe-section {
+    margin: 20px 0;
+    text-align: center; /* Centraliza o botão */
+}
+
+.subscribe-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #000000; /* Fundo preto */
+    color: #ffffff; /* Texto branco */
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #ffffff; /* Borda branca */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.subscribe-button:hover {
+    background: #ffffff; /* Fundo branco no hover */
+    color: #000000; /* Texto preto no hover */
+}
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: #000000; /* Fundo preto */
+    color: #ffffff; /* Texto branco */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Header styles */
+.header {
+    background-color: #212121; /* Fundo do cabeçalho */
+    padding: 20px 0;
+}
+
+.header h1 {
+    color: #304fff; /* Azul dos títulos */
+    font-size: 2em;
+}
+
+/* Confirmation section */
+.confirmation-section {
+    margin: 30px 0;
+}
+
+.confirmation-section h2 {
+    font-size: 1.8em;
+    color: #304fff; /* Azul dos títulos */
+}
+
+/* Credits section */
+.credits-section {
+    margin: 20px 0;
+}
+
+.credits-section h3 {
+    color: #304fff; /* Azul dos títulos */
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Credits list */
+.credits-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.credit-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.credit-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #304fff;
+    margin-bottom: 10px;
+}
+
+/* Back button */
+.back-section {
+    margin-top: 30px;
+}
+
+.back-button {
+    background-color: #212121; /* Fundo cinza escuro */
+    color: #ffffff; /* Texto branco */
+    border: 2px solid #304fff; /* Borda azul */
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #304fff; /* Azul */
+    color: #212121; /* Texto cinza escuro */
+}
